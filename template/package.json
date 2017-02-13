@@ -1,0 +1,33 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "dependencies": {
+    "Respond.js": "git://github.com/scottjehl/Respond.git",
+    "bootstrap": "^3.3.7",
+    "bootstrap-styl": "^5.0.8",
+    "es5-shim": "^4.5.9",
+    "html5shiv": "^3.7.3",
+    "jquery": "^1.9.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jade2php": "^1.0.4",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "nib": "^1.1.2"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

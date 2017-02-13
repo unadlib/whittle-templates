@@ -1,0 +1,19 @@
+{
+  "name": "whittle-templates",
+  "version": "1.0.0",
+  "description": "An automation tools setup templates with Stylus and Pug(Jade).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unadlib/whittle-templates.git"
+  },
+  "author": "unadlib",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unadlib/whittle-templates/issues"
+  },
+  "homepage": "https://github.com/unadlib/whittle-templates#readme"
+}

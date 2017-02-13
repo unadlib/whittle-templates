@@ -1,0 +1,7 @@
+{
+    "site":{
+        "title":"{{ name }}",
+        "description":"{{ description }}",
+        "author":"{{ author }}"
+    }
+}
