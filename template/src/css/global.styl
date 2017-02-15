@@ -2,7 +2,9 @@
 
 @import "nib"
 @import "theme/default.styl"
+<% if (data.bootstrap) { %>
 @import bootstrap
+<% } %>
 @import "module/*"
 @import "module/*/*"
 @import "component/*"
