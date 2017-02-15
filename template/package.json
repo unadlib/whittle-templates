@@ -7,12 +7,12 @@
     <% if (data.bootstrap) { %>
     "bootstrap": "^3.3.7",
     "bootstrap-styl": "^5.0.8",
-    "jquery": "^1.9.1"<% if (!data.ie8 && !data.fontawesome) { %>,<% } %>
+    "jquery": "^1.9.1"<% if (data.ie8 || data.fontawesome) { %>,<% } %>
     <% } %>
     <% if (data.ie8) { %>
     "es5-shim": "^4.5.9",
     "html5shiv": "^3.7.3",
-    "Respond.js": "git://github.com/scottjehl/Respond.git"<% if (!data.fontawesome) { %>,<% } %>
+    "Respond.js": "git://github.com/scottjehl/Respond.git"<% if (data.fontawesome) { %>,<% } %>
     <% } %>
     <% if (data.fontawesome) { %>
     "font-awesome": "^4.7.0"
