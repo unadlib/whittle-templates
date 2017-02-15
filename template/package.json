@@ -1,8 +1,8 @@
 {
-  "name": "<%= name %>",
+  "name": "<%= data.name %>",
   "version": "1.0.0",
-  "description": "<%= description %>",
-  "author": "<%= author %>",
+  "description": "<%= data.description %>",
+  "author": "<%= data.author %>",
   "dependencies": {
     "Respond.js": "git://github.com/scottjehl/Respond.git",
     "bootstrap": "^3.3.7",
