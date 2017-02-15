@@ -4,13 +4,19 @@
   "description": "<%= data.description %>",
   "author": "<%= data.author %>",
   "dependencies": {
-    "Respond.js": "git://github.com/scottjehl/Respond.git",
+    <% if (data.bootstrap) { %>
     "bootstrap": "^3.3.7",
     "bootstrap-styl": "^5.0.8",
+    "jquery": "^1.9.1"<% if (!data.ie8 && !data.fontawesome) { %>,<% } %>
+    <% } %>
+    <% if (data.ie8) { %>
     "es5-shim": "^4.5.9",
     "html5shiv": "^3.7.3",
-    "jquery": "^1.9.1",
+    "Respond.js": "git://github.com/scottjehl/Respond.git"<% if (!data.fontawesome) { %>,<% } %>
+    <% } %>
+    <% if (data.fontawesome) { %>
     "font-awesome": "^4.7.0"
+    <% } %>
   },
   "devDependencies": {
     "del": "^2.2.2",
@@ -18,7 +24,9 @@
     "nib": "^1.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
+    <% if (data.fontawesome) { %>
     "gulp-jade2php": "^1.0.4",
+    <% } %>
     "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.2.0",

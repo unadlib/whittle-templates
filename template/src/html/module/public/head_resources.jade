@@ -1,0 +1,9 @@
+link(href="css/global.css", media="all", rel="stylesheet")
+<% if (data.fontawesome) { %>
+link(href="css/font-awesome.min.css", media="all", rel="stylesheet")
+<% } %>
+<% if (data.ie8) { %>
+<!--[if lt IE 9]>
+script(src="js/polyfill.min.js")
+<![endif]-->
+<% } %>
